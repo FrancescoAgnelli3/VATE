@@ -4,11 +4,19 @@ import speech_recognition as sr
 
 
 def cut_video(text_file, output_folder):
+    """
+    Cuts a video into smaller segments based on the start and end times provided in a text file, and generates audio and text files for each segment.
+    
+    Args:
+        text_file (str): The path to the text file containing the start and end times for each video segment.
+        output_folder (str): The path to the output folder where the cut video, audio, and text files will be saved.
+    
+    Returns:
+        None
+    """
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
     video_path = None
-
-    # count = 43
 
     with open(text_file, 'r') as f:
         for i, line in enumerate(f):
