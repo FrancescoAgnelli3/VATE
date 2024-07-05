@@ -8,7 +8,7 @@ from utils import *
 #from torchvision.models.video import mvit_v1_b
 from contrastive_model import Contrastive_model
 from transformers import VivitImageProcessor, BertTokenizer
-from AVEMOT import AVEMOTDataset
+from VATE import VATEDataset
 from tqdm import trange
 from video import Video
 from audio import Audio
@@ -27,13 +27,13 @@ class Config:
     def __init__(self):
         self.TASK_NAME = "Emotion"
         self.ROOT = os.path.dirname(os.path.abspath(__file__))
-        self.DATASET = AVEMOTDataset
-        self.DATASET_NAME = "AVEMOT"
+        self.DATASET = VATEDataset
+        self.DATASET_NAME = "VATE"
         self.OUTPUT_DIR = f"{self.ROOT}/output/{self.DATASET_NAME}"
 
         self.DATASET_ARGS = {
             "dataset_name": self.DATASET_NAME,
-            "data_path": f"{self.ROOT}/feature_extraction/AVEMOT",
+            "data_path": f"{self.ROOT}/feature_extraction/VATE",
             "store": True,
             "shuffle": True,
             "pkl_fname": f"{self.DATASET_NAME}_data_frame.pkl",
@@ -81,20 +81,20 @@ class Training_contrastive():
         optimizer = optim.Adam(model.parameters(), lr=learning_rate)
         scheduler = ReduceLROnPlateau(optimizer, mode="min", patience=10, verbose=True)
 
-        AVEMOT = AVEMOTDataset(self.config, ext = 'mp4', verbose=1)
+        VATE = VATEDataset(self.config, ext = 'mp4', verbose=1)
         video_media = Video(
-                    self.config, dataset=AVEMOT, filename=config.MEDIA["Video"]["pkl_fname"], store=config.MEDIA["Video"]["store"], store_info=config.MEDIA["Video"]["store_info"], verbose=1
+                    self.config, dataset=VATE, filename=config.MEDIA["Video"]["pkl_fname"], store=config.MEDIA["Video"]["store"], store_info=config.MEDIA["Video"]["store_info"], verbose=1
                 )
-        AVEMOT = AVEMOTDataset(config, ext = 'wav', verbose=1)
+        VATE = VATEDataset(config, ext = 'wav', verbose=1)
         audio_media = Audio(
-                    self.config, dataset=AVEMOT, filename=config.MEDIA["Audio"]["pkl_fname"], store=config.MEDIA["Audio"]["store"], store_info=config.MEDIA["Audio"]["store_info"], verbose=1
+                    self.config, dataset=VATE, filename=config.MEDIA["Audio"]["pkl_fname"], store=config.MEDIA["Audio"]["store"], store_info=config.MEDIA["Audio"]["store_info"], verbose=1
                 )
-        AVEMOT = AVEMOTDataset(config, ext = 'txt', verbose=1)
+        VATE = VATEDataset(config, ext = 'txt', verbose=1)
         text_media = Text(
-                    self.config, dataset=AVEMOT, filename=config.MEDIA["Text"]["pkl_fname"], store=config.MEDIA["Text"]["store"], store_info=config.MEDIA["Text"]["store_info"], verbose=1
+                    self.config, dataset=VATE, filename=config.MEDIA["Text"]["pkl_fname"], store=config.MEDIA["Text"]["store"], store_info=config.MEDIA["Text"]["store_info"], verbose=1
                 )
 
-        x_train_loader = AVEMOT.train_test_split()
+        x_train_loader = VATE.train_test_split()
 
         if self.store:
             train_loader_video = []

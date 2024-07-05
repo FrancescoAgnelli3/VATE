@@ -19,7 +19,7 @@ for line in lines:
     extraction = processor.process_video()
     
     #extract the data
-    output_folder = "AVEMOT"
+    output_folder = "VATE"
     if extraction:
         cut_video(text_file, output_folder)
 

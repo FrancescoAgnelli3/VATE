@@ -10,9 +10,9 @@ from collections import defaultdict
 from dataset import DatasetFS
 from utils import *
 
-class AVEMOTDataset(DatasetFS):
+class VATEDataset(DatasetFS):
     """
-    Class describing the dataset AVEMOT.
+    Class describing the dataset VATE.
 
     Filename example: Question_01.mp4
     """
