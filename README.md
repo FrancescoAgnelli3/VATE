@@ -2,13 +2,13 @@
   <img src="https://cdn-icons-png.flaticon.com/512/6295/6295417.png" width="100" />
 </p>
 <p align="center">
-    <h1 align="center">VATEMOT</h1>
+    <h1 align="center">VATE</h1>
 </p>
 <p align="center">
-	<img src="https://img.shields.io/github/license/FrancescoAgnelli3/VATEmot?style=flat&color=0080ff" alt="license">
-	<img src="https://img.shields.io/github/last-commit/FrancescoAgnelli3/VATEmot?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
-	<img src="https://img.shields.io/github/languages/top/FrancescoAgnelli3/VATEmot?style=flat&color=0080ff" alt="repo-top-language">
-	<img src="https://img.shields.io/github/languages/count/FrancescoAgnelli3/VATEmot?style=flat&color=0080ff" alt="repo-language-count">
+	<img src="https://img.shields.io/github/license/FrancescoAgnelli3/VATE?style=flat&color=0080ff" alt="license">
+	<img src="https://img.shields.io/github/last-commit/FrancescoAgnelli3/VATE?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+	<img src="https://img.shields.io/github/languages/top/FrancescoAgnelli3/VATE?style=flat&color=0080ff" alt="repo-top-language">
+	<img src="https://img.shields.io/github/languages/count/FrancescoAgnelli3/VATE?style=flat&color=0080ff" alt="repo-language-count">
 <p>
 <p align="center">
 		<em>Developed with the software and tools below.</em>
@@ -40,7 +40,7 @@
 > - [ Repository Structure](#-repository-structure)
 > - [ Getting Started](#-getting-started)
 >   - [ Installation](#-installation)
->   - [ Downloading VATEmot](#-downloading-VATEmot)
+>   - [ Downloading VATE](#-downloading-VATE)
 >   - [ Contrastive model](#-contrastive-model)
 > - [ Contributing](#-contributing)
 > - [ License](#-license)
@@ -49,12 +49,12 @@
 
 ##  Overview
 
-This is the repository for VATEmot, a rich dataset for affective computing called Video-Audio-Text Emotional (VATEmot). VATEmot is designed to capture a diverse range of data, encompassing various cues to different aspects of human emotions. It also enables researchers and developers to create models that can more effectively understand and respond to human emotions. The dataset includes raw audio-visual data and text transcriptions from 21,871 samples, specifically designed for self-supervised representation learning tasks without manual labels. To demonstrate the validity of the dataset, we trained a backbone model on VATEmot using contrastive learning. Experimental results show that this backbone, when used as a feature extractor for downstream tasks, outperforms coders trained on generic datasets. The weights of the contrastive model are provided in the repository.
+This is the repository for VATE, a rich dataset for affective computing called Video-Audio-Text Emotional (VATE). VATE is designed to capture a diverse range of data, encompassing various cues to different aspects of human emotions. It also enables researchers and developers to create models that can more effectively understand and respond to human emotions. The dataset includes raw audio-visual data and text transcriptions from 21,871 samples, specifically designed for self-supervised representation learning tasks without manual labels. To demonstrate the validity of the dataset, we trained a backbone model on VATE using contrastive learning. Experimental results show that this backbone, when used as a feature extractor for downstream tasks, outperforms coders trained on generic datasets. The weights of the contrastive model are provided in the repository.
 
 An overview of the data can be found at
 
 ```sh
-VATEmot/output/AVEMOT/metadata.json
+VATE/output/VATE/metadata.json
 ```
 
 ---
@@ -62,8 +62,8 @@ VATEmot/output/AVEMOT/metadata.json
 ##  Repository Structure
 
 ```sh
-└── VATEmot/
-    ├── AVEMOT.py
+└── VATE/
+    ├── VATE.py
     ├── README.md
     ├── audio.py
     ├── contrastive_model.py
@@ -71,7 +71,7 @@ VATEmot/output/AVEMOT/metadata.json
     ├── dataset_utils.py
     ├── feature_extraction
     │   ├── .DS_Store
-    │   ├── AVEMOT
+    │   ├── VATE
     │   │   └── .DS_Store
     │   ├── __pycache__
     │   │   ├── count_faces.cpython-310.pyc
@@ -87,7 +87,7 @@ VATEmot/output/AVEMOT/metadata.json
     ├── media.py
     ├── output
     │   ├── .DS_Store
-    │   └── AVEMOT
+    │   └── VATE
     │       ├── .DS_Store
     │       ├── best_model_contrastive.pt
     │       └── metadata.json
@@ -104,16 +104,16 @@ VATEmot/output/AVEMOT/metadata.json
 
 ###  Installation
 
-1. Clone the VATEmot repository:
+1. Clone the VATE repository:
 
 ```sh
-git clone https://github.com/FrancescoAgnelli3/VATEmot
+git clone https://github.com/FrancescoAgnelli3/VATE
 ```
 
 2. Change to the project directory:
 
 ```sh
-cd VATEmot
+cd VATE
 ```
 
 3. Install the dependencies:
@@ -122,9 +122,9 @@ cd VATEmot
 pip install -r requirements.txt
 ```
 
-###  Downloading VATEmot
+###  Downloading VATE
 
-Use the following command to download the VATEmot dataset:
+Use the following command to download the VATE dataset:
 
 1. Change the project directory:
 
@@ -141,7 +141,7 @@ python main.py
 The dataset will be downloaded in the folder:
 
 ```sh
-VATEmot/feature_extraction/AVEMOT
+VATE/feature_extraction/VATE
 ```
 
 If you want to add other YouTube playlist to the dataset, you can add them and run: 
@@ -161,7 +161,7 @@ python main.py
 1. To train the contrastive model on the dataset, change to the project directory:
 
 ```sh
-cd VATemot
+cd VATE
 ```
 
 2. Train the model:
@@ -173,16 +173,16 @@ python main.py
 3. The model will be saved (or it can be directly downloaded) in the folder:
 
 ```sh
-VATEmot/output/AVEMOT/best_model_contrastive.pt
+VATE/output/VATE/best_model_contrastive.pt
 ```
 
 ##  Contributing
 
 Contributions are welcome! Here are several ways you can contribute:
 
-- **[Submit Pull Requests](https://github.com/FrancescoAgnelli3/VATEmot/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
-- **[Join the Discussions](https://github.com/FrancescoAgnelli3/VATEmot/discussions)**: Share your insights, provide feedback, or ask questions.
-- **[Report Issues](https://github.com/FrancescoAgnelli3/VATEmot/issues)**: Submit bugs found or log feature requests for Vatemot.
+- **[Submit Pull Requests](https://github.com/FrancescoAgnelli3/VATE/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
+- **[Join the Discussions](https://github.com/FrancescoAgnelli3/VATE/discussions)**: Share your insights, provide feedback, or ask questions.
+- **[Report Issues](https://github.com/FrancescoAgnelli3/VATE/issues)**: Submit bugs found or log feature requests for VATE.
 
 <details closed>
     <summary>Contributing Guidelines</summary>
@@ -190,7 +190,7 @@ Contributions are welcome! Here are several ways you can contribute:
 1. **Fork the Repository**: Start by forking the project repository to your GitHub account.
 2. **Clone Locally**: Clone the forked repository to your local machine using a Git client.
    ```sh
-   git clone https://github.com/FrancescoAgnelli3/VATEmot
+   git clone https://github.com/FrancescoAgnelli3/VATE
    ```
 3. **Create a New Branch**: Always work on a new branch, giving it a descriptive name.
    ```sh
