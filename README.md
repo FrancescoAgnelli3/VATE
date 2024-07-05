@@ -54,7 +54,7 @@ This is the repository for VATE, a rich dataset for affective computing called V
 An overview of the data can be found at
 
 ```sh
-VATEmot/output/AVEMOT/metadata.json
+VATE/output/VATE/metadata.json
 ```
 
 ---
@@ -62,8 +62,8 @@ VATEmot/output/AVEMOT/metadata.json
 ##  Repository Structure
 
 ```sh
-└── VATEmot/
-    ├── AVEMOT.py
+└── VATE/
+    ├── VATE.py
     ├── README.md
     ├── audio.py
     ├── contrastive_model.py
@@ -141,7 +141,7 @@ python main.py
 The dataset will be downloaded in the folder:
 
 ```sh
-VATEmot/feature_extraction/AVEMOT
+VATE/feature_extraction/VATE
 ```
 
 If you want to add other YouTube playlist to the dataset, you can add them and run: 
@@ -173,7 +173,7 @@ python main.py
 3. The model will be saved (or it can be directly downloaded) in the folder:
 
 ```sh
-VATEmot/output/AVEMOT/best_model_contrastive.pt
+VATE/output/VATE/best_model_contrastive.pt
 ```
 
 ##  Contributing
