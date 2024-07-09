@@ -96,7 +96,7 @@ pip install -r requirements.txt
 
 Use the following command to download the VATE dataset:
 
-1. Change the project directory:
+1. Change to the project directory:
 
 ```sh
 cd feature_extraction
@@ -114,13 +114,13 @@ The dataset will be downloaded in the folder:
 VATE/feature_extraction/VATE
 ```
 
-If you want to add other YouTube playlist to the dataset, you can add them and run: 
+If you want to add other YouTube playlists to the dataset, you can add them to the python file and run: 
 
 ```sh
 python collect_yb.py
 ```
 
-and then again:
+And then again:
 
 ```sh
 python main.py
@@ -131,7 +131,7 @@ python main.py
 1. To train the contrastive model on the dataset, change to the project directory:
 
 ```sh
-cd VATE
+cd ..
 ```
 
 2. Train the model:
@@ -140,12 +140,12 @@ cd VATE
 python main.py
 ```
 
-3. The model will be saved (or it can be directly downloaded) in the folder:
+3. The model will be saved in (or it can be directly downloaded, already pre-trained, from) the folder:
 
 ```sh
 VATE/output/VATE/best_model_contrastive.pt
 ```
-
+<!-- 
 ##  Contributing
 
 Contributions are welcome! Here are several ways you can contribute:
@@ -181,7 +181,7 @@ Once your PR is reviewed and approved, it will be merged into the main branch.
 
 </details>
 
----
+--- -->
 
 ##  License
 
