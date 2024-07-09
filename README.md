@@ -14,14 +14,14 @@
 
 ##  Quick Links
 
-> - [ Overview](#-Overview)
-> - [ Repository Structure](#-Repository-Structure)
-> - [ Getting Started](#-Getting-Started)
->   - [ Installation](#-Installation)
->   - [ Downloading VATE](#-Downloading-VATE)
->   - [ Contrastive model](#-Contrastive-Model)
-> - [ Contributing](#-Contributing)
-> - [ License](#-License)
+> - [ Overview](#-overview)
+> - [ Repository Structure](#-repository-structure)
+> - [ Getting Started](#-getting-started)
+>   - [ Installation](#-installation)
+>   - [ Downloading VATE](#-downloading-VATE)
+>   - [ Contrastive model](#-contrastive-model)
+> - [ Contributing](#-contributing)
+> - [ License](#-license)
 
 ---
 
@@ -145,6 +145,21 @@ python main.py
 ```sh
 VATE/output/VATE/best_model_contrastive.pt
 ```
+
+## Contributing
+
+To contribute to the project, please follow these guidelines:
+
+1. Fork the repository and clone it to your local machine.
+
+2. Create a new branch for your feature or bug fix.
+
+3. Make your changes and commit them with descriptive commit messages.
+
+4. Push your branch to your forked repository.
+
+5. Submit a pull request to the main repository.
+
 <!-- 
 ##  Contributing
 
