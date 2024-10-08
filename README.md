@@ -12,6 +12,9 @@
 <p>
 <hr>
 
+***Francesco Agnelli¹, Giuliano Grossi¹, Alessandro D'amelio¹, Marco De Poli¹, Raffaella Lanzarotti¹***  
+¹ [PHuSe Lab](https://phuselab.di.unimi.it) - Dipartimento di Informatica, Università degli Studi di Milano 
+
 ##  Quick Links
 
 > - [ Overview](#-overview)
