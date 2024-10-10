@@ -144,7 +144,7 @@ pynv==0.3
 pyparsing==2.4.7
 PySocks==1.7.1
 python-dateutil==2.9.0.post0
-pytubefix-7.4.0
+pytubefix==7.4.0
 pytz==2023.3.post1
 PyWavelets==1.6.0
 PyYAML==5.4.1
