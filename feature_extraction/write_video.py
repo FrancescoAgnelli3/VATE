@@ -4,7 +4,7 @@ from moviepy.editor import VideoFileClip
 import mediapipe as mp
 import numpy as np
 import matplotlib.pyplot as plt
-from pytube import YouTube
+from pytubefix import YouTube
 import argparse
 
 class VideoProcessor:
