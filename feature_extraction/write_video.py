@@ -175,10 +175,10 @@ class VideoProcessor:
         Returns:
             tuple: A tuple containing the normalized RGB vector, normalized BB vector, video FPS, and video file path.
         """
-        yt = YouTube(self.video_file)
-        title = yt.title
-        title = title.replace(" ", "_")
         try:
+            yt = YouTube(self.video_file)
+            title = yt.title
+            title = title.replace(" ", "_")
             stream = yt.streams.get_highest_resolution()
             video_path = stream.download(filename = title)
             #documentation: https://pypi.org/project/pafy/
