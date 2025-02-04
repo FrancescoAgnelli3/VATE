@@ -68,7 +68,7 @@ class VideoProcessor:
             list: A list of tuples, where each tuple represents a cleaned segment of the video, containing the start and end times of the segment.
         """
         cleaned_seconds = []
-        t_min,t_max = 1.0, 3
+        t_min,t_max = 6, 15
         for i in range(len(seconds_combined)-1):
             if (seconds_combined[i+1] - seconds_combined[i]) >= t_min:
                 if (seconds_combined[i+1] - seconds_combined[i]) >= t_max:
@@ -176,7 +176,7 @@ class VideoProcessor:
             tuple: A tuple containing the normalized RGB vector, normalized BB vector, video FPS, and video file path.
         """
         try:
-            yt = YouTube(self.video_file)
+            yt = YouTube(self.video_file, use_oauth=True, allow_oauth_cache=True)
             title = yt.title
             title = title.replace(" ", "_")
             stream = yt.streams.get_highest_resolution()
