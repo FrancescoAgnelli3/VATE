@@ -208,8 +208,9 @@ This project is protected under the [MIT LICENSE](https://choosealicense.com/lic
 
 ##  Citations
 
-If you use this dataset, please cite:
+If you use this dataset or model in your research, please cite the following:
 
+```bibtex
 @inproceedings{agnelli2025vate,
   title={VATE: A Large Scale Multimodal Spontaneous Dataset for Affective Evaluation},
   author={Agnelli, Francesco and Grossi, Giuliano and D’Amelio, Alessandro and De Paoli, Marco and Lanzarotti, Raffaella},
@@ -218,4 +219,5 @@ If you use this dataset, please cite:
   year={2025},
   organization={Springer}
 }
+
 
