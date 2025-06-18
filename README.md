@@ -1,20 +1,22 @@
 <p align="center">
   <img src="https://cdn-icons-png.flaticon.com/512/6295/6295417.png" width="100" />
 </p>
+
+<h1 align="center">VATE</h1>
+
 <p align="center">
-    <h1 align="center">VATE</h1>
+  <img src="https://img.shields.io/github/license/FrancescoAgnelli3/VATE?style=flat&color=0080ff" alt="license">
+  <img src="https://img.shields.io/github/last-commit/FrancescoAgnelli3/VATE?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+  <img src="https://img.shields.io/github/languages/top/FrancescoAgnelli3/VATE?style=flat&color=0080ff" alt="repo-top-language">
+  <img src="https://img.shields.io/github/languages/count/FrancescoAgnelli3/VATE?style=flat&color=0080ff" alt="repo-language-count">
 </p>
-<p align="center">
-	<img src="https://img.shields.io/github/license/FrancescoAgnelli3/VATE?style=flat&color=0080ff" alt="license">
-	<img src="https://img.shields.io/github/last-commit/FrancescoAgnelli3/VATE?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
-	<img src="https://img.shields.io/github/languages/top/FrancescoAgnelli3/VATE?style=flat&color=0080ff" alt="repo-top-language">
-	<img src="https://img.shields.io/github/languages/count/FrancescoAgnelli3/VATE?style=flat&color=0080ff" alt="repo-language-count">
-<p>
+
 <hr>
 
-***Francesco Agnelli¹, Giuliano Grossi¹, Alessandro D'amelio¹, Marco De Poli¹, Raffaella Lanzarotti¹***  
-This is the official repository for VATE: A Large Scale Multimodal Spontaneous Dataset for Affective Evaluation
-¹ [PHuSe Lab](https://phuselab.di.unimi.it) - Dipartimento di Informatica, Università degli Studi di Milano 
+This is the official repository for **[VATE: A Large Scale Multimodal Spontaneous Dataset for Affective Evaluation](https://link.springer.com/chapter/10.1007/978-3-031-91575-8_13)**.  
+**Francesco Agnelli¹, Giuliano Grossi¹, Alessandro D’Amelio¹, Marco De Poli¹, Raffaella Lanzarotti¹**  
+¹ [PHuSe Lab](https://phuselab.di.unimi.it) – Department of Computer Science, University of Milan
+ 
 
 ##  Quick Links
 
