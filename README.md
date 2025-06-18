@@ -13,6 +13,7 @@
 <hr>
 
 ***Francesco Agnelli¹, Giuliano Grossi¹, Alessandro D'amelio¹, Marco De Poli¹, Raffaella Lanzarotti¹***  
+This is the official repository for VATE: A Large Scale Multimodal Spontaneous Dataset for Affective Evaluation
 ¹ [PHuSe Lab](https://phuselab.di.unimi.it) - Dipartimento di Informatica, Università degli Studi di Milano 
 
 ##  Quick Links
@@ -204,4 +205,17 @@ Once your PR is reviewed and approved, it will be merged into the main branch.
 ##  License
 
 This project is protected under the [MIT LICENSE](https://choosealicense.com/licenses/mit/) License.
+
+##  Citations
+
+If you use this dataset, please cite:
+
+@inproceedings{agnelli2025vate,
+  title={VATE: A Large Scale Multimodal Spontaneous Dataset for Affective Evaluation},
+  author={Agnelli, Francesco and Grossi, Giuliano and D’Amelio, Alessandro and De Paoli, Marco and Lanzarotti, Raffaella},
+  booktitle={European Conference on Computer Vision},
+  pages={204--222},
+  year={2025},
+  organization={Springer}
+}
 
